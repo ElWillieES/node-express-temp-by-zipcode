@@ -20,7 +20,6 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-//app.get(/^\/(\d{5})$/, (req, res, next) => {
 app.get(/^\/api\/zip\/(\d{5})$/, (req, res, next) => {
     const zipcode = req.params[0];
 
